@@ -14,7 +14,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -51,6 +50,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+
 .logo span {
   color: #000000;
 }
@@ -69,13 +69,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-.menu a:hover,
+
 .menu a.active {
   
   color: var(--primary-color);
 }
 
 .contacts {
+  display: flex;
+  background-size: cover;
   display: flex;
   gap: 50px;
 }
@@ -94,9 +96,12 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: var(--dark-bg);
-  padding: 200px 0;
+
+  background-repeat: no-repeat;
+  padding: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/logo.png);
   text-align: center;
+  background-position: center;
 }
 
 .hero h1 {
